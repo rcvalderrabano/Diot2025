@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Para alinear los elementos verticalmente */
+}
+
+table {
+    width: 80%;
+    table-layout: auto; /* Ajuste automático del ancho de las columnas */
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+th {
+    background-color: #4c6aaf;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+caption {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tfoot {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+tfoot td {
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Estilo para el h2 */
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Color del texto */
+    font-size: 2.5em; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Para que el texto sea en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Estilo responsivo */
+@media (max-width: 300px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    caption {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2em; /* Reducir tamaño del título en pantallas pequeñas */
+    }
+}
