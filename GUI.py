@@ -7,11 +7,11 @@ import os
 class AplicacionConfiguracion(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("DIOT 2025 - Convertidor Excel a Txt")
+        self.title("DIOT 2025 Convertidor Excel a Txt")
         self.geometry("500x200")
 
         # Esta línea coloca la imagen que uno desea
-        icono = tk.PhotoImage(file=r'ADVAN100X100.png')
+        icono = tk.PhotoImage(file=r'SAT100X100.png')
         self.iconphoto(True, icono)
 
         # Variables de control
